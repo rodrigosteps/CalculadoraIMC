@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  --bkgColor: #110B11;
+  --mainColor: #3685B5;
+  --borderRadius: 0.75em;
+  --fildsColor: #e8e8e8;
+  --textShadow: 0px 4px #002290;
+  --textShadowWhite: 0px 4px #c8c8c8;
+  font-family: cherry bomb one;
+}
+
+body {
+  background-color: var(--bkgColor);
+}
+/*main style*/
+.container {
+  margin: 4em auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: left;
+  width: 40em;
+  height: 50em;
+  border-radius: var(--borderRadius);
+  border-radius: 50px;
+  box-shadow: 15px 15px 12px #070810, -5px -5px 12px #272a34;
+}
+
+/* filds style*/
+
+h1 {
+  font-size: 4em;
+  color: var(--mainColor);
+  margin: 1em;
+  border-bottom: 1px solid;
+  text-align: center;
+  text-shadow: var(--textShadowWhite);
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0.1em 1em;
+  font-size: 2em;
+  color: var(--mainColor);
+  gap: 1em;
+
+  input {
+    width: 10em;
+    height: 2.75em;
+    border: 2px solid var(--mainColor);
+    border-radius: var(--borderRadius);
+    text-align: center;
+    font-weight: 900;
+    font-size: 0.8em;
+    color: var(--mainColor);
+    text-shadow: var(--textShadow);
+
+    border: solid 4px var(--mainColor);
+  }
+  label {
+    font-size: 160%;
+    text-shadow:var(--textShadowWhite);
+  }
+
+  #peso {
+    margin-left: 1.5em;
+  }
+}
+
+/*Button style*/
+button {
+  width: 20em;
+  height: 4em;
+  margin: 1em auto;
+  padding-bottom: 6em;
+  border-radius: var(--borderRadius);
+  border: solid 4px var(--mainColor);
+  color: var(--mainColor);
+  background-color: var();
+
+  p {
+    font-size: 4em;
+    text-shadow: var(--textShadow);
+  }
+}
+.calcule:hover {
+  transition: ease 0.2s;
+  transform: translateY(-4px);
+}
+
+.calcule:active {
+  transition: linear 0.1s;
+  transform: translateY(0px);
+}
+
+/*display style*/
+.resultado {
+  width: 34em;
+  height: 18em;
+  margin: 1em auto;
+  border-radius: var(--borderRadius);
+  border: solid 4px var(--mainColor);
+  color: var(--mainColor);
+  background-color: var(--fildsColor);
+  padding: 1em 0 0 2em;
+
+  span {
+    margin: 0 auto;
+    font-size: 2em;
+    font-weight: 700;
+    text-shadow: var(--textShadow);
+  }
+}
