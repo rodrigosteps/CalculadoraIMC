@@ -7,7 +7,7 @@
   --mainColor: #3685B5;
   --borderRadius: 0.75em;
   --fildsColor: #e8e8e8;
-  --textShadow: 0px 4px #002290;
+  --textShadow: -webkit-text-stroke: #0e1d68dd 3px;
   --textShadowWhite: 0px 4px #c8c8c8;
   font-family: cherry bomb one;
 }
@@ -23,7 +23,7 @@ body {
   flex-wrap: nowrap;
   align-items: left;
   width: 30em;
-  height: 40em;
+  height: auto;
   border-radius: var(--borderRadius);
   border-radius: 50px;
   box-shadow: 15px 15px 12px #070810, -5px -5px 12px #272a34;
@@ -51,9 +51,10 @@ body {
     border-radius: var(--borderRadius);
     text-align: center;
     font-weight: 900;
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: var(--mainColor);
     text-shadow: var(--textShadow);
+    text-transform: uppercase;
 
     border: solid 4px var(--mainColor);
   }
@@ -78,7 +79,7 @@ button {
 
   p {
     font-size: 4em;
-    text-shadow: var(--textShadow);
+    -webkit-text-stroke: #0e1d68dd 3px;
   }
 }
 .calcule:hover {
@@ -93,19 +94,21 @@ button {
 
 /*display style*/
 .resultado {
-  width: 34em;
-  height: 18em;
+  width: 26em;
+  height: auto;
   margin: 1em auto;
   border-radius: var(--borderRadius);
   border: solid 4px var(--mainColor);
   color: var(--mainColor);
   background-color: var(--fildsColor);
-  padding: 1em 0 0 2em;
+  padding: 0.5em;
 
   span {
     margin: 0 auto;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 700;
-     -webkit-text-stroke: #874242 1.5px;
+    -webkit-text-stroke: #0e1d68dd 1px;
+    text-transform: capitalize;
+    
   }
 }
