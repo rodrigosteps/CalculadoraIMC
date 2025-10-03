@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: left;
-  width: 30em;
+  width: 40em;
   height: auto;
   border-radius: var(--borderRadius);
   border-radius: 50px;
@@ -81,19 +81,18 @@ button {
     -webkit-text-stroke: #0e1d68dd 3px;
   }
 }
-.calcule:hover {
-  transition: ease 0.2s;
+.calcule {
   transform: translateY(-4px);
 }
 
 .calcule:active {
-  transition: linear 0.1s;
-  transform: translateY(0px);
+  transition: ease-in 0.1s;
+  transform: translateY(2px);
 }
 
 /*display style*/
 .resultado {
-  width: 26em;
+  width: 36em;
   height: auto;
   margin: 1em auto;
   border-radius: var(--borderRadius);
@@ -101,7 +100,7 @@ button {
   color: var(--mainColor);
   background-color: var(--fildsColor);
   padding: 0.5em;
-
+text-align: center;
   span {
     margin: 0 auto;
     font-size: 1.8em;
@@ -110,4 +109,31 @@ button {
     text-transform: capitalize;
     
   }
+}
+
+
+/*Mobile style*/
+
+@media screen and (min-width:400px){
+
+  .container{
+    margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .resultado {
+  width: 90%;
+}
+
+.input {
+  font-size: 1.1em;
+ 
+  label {
+    font-size: 2.6rem;
+  }
+}
+
 }

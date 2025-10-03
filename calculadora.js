@@ -14,18 +14,17 @@ const valorIMC = ( peso / (altura * altura)).toFixed(1);
 let classificacao = '';
 
 if (valorIMC < 18.5){
-    classificacao='abaixo do peso, procure orientação profissional de um(a) nutricionista.'
-}else if (valorIMC < 25){
-    classificacao = 'com peso ideal, Mantenha o foco!'
-}else if (valorIMC < 30){
-    classificacao = 'levemente acima do peso, Mantenha a atenção para evitar o ganho de peso futuro!'
-}else if(valorIMC < 35){
-    classificacao = 'Com Obesidade Grau I, o ideal é procurar orientação de um(a) nutricionista!'
-}else if(valorIMC < 40){
-    classificacao = 'Com Obesidade Grau II, é fundamental buscar ajuda especializada para criar um plano alimentar e de atividade física!'
-}
-else if (valorIMC > 40){
-    classificacao = 'em condição de peso muito grave. É hora de uma reeducação alimentar completa e com apoio profissional!'
+    classificacao = 'Abaixo do peso. Parabéns! Você é um ser de luz, quase etéreo. Agora, por favor, coma algo antes que o vento te leve.'
+} else if (valorIMC < 25){
+    classificacao = 'Com peso ideal. Não se preocupe, a inveja das outras pessoas vai garantir que você não saia da linha.'
+} else if (valorIMC < 30){
+    classificacao = 'Levemente acima do peso. Quase lá! Você só está um "pouquinho" mais preparado para o inverno. Se for para mudar, faça isso com a elegância de quem não quer nada.'
+} else if(valorIMC < 35){
+    classificacao = 'Obesidade Grau I. Bem-vindo(a) ao clube! Seus ossos estão apenas se preparando para o seu futuro cargo de "acolchoado oficial do sofá".'
+} else if(valorIMC < 40){
+    classificacao = 'Obesidade Grau II. Impressionante! Você dominou a arte de virar uma aglomeração de uma pessoa só. O próximo desafio é conseguir amarrar o tênis sem prender a respiração.'
+} else if (valorIMC >= 40) {   
+    classificacao = 'Obesidade Grau III (Mórbida). Nível máximo de excelência atingido! Se a gravidade já não era suficiente, seu peso com certeza resolveu o problema. Ligue para o médico... se conseguir alcançar o telefone.'
 }
 resultado.textContent= `${nome} seu IMC é ${valorIMC} e você está ${classificacao}`
 
