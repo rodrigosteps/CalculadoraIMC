@@ -41,6 +41,7 @@ body {
   align-items: baseline;
   margin: 0.1em 1em;
   font-size: 1.5em;
+  padding: 0 2em;
   color: var(--mainColor);
 
   input {
@@ -58,7 +59,7 @@ body {
     border: solid 4px var(--mainColor);
   }
   label {
-    font-size: 2.5rem;
+    font-size: 3.8rem;
     -webkit-text-stroke: #e8e8e8 1.5px;
   }
 
@@ -130,10 +131,11 @@ text-align: center;
 
 .input {
   font-size: 1.1em;
+      padding: 0;
 
   label {
-    font-size: 2.6rem;
-  }
+    font-size: 2.1rem;
+    }
 }
 
 }
