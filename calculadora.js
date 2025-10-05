@@ -1,11 +1,13 @@
 const calcule = document.getElementById('calcule')
-
+    alert("hello");
 function imc (){
     const nome = document.getElementById('nome').value;
     const alturaComVirgula = document.getElementById('altura').value;
     const altura = parseFloat(alturaComVirgula.replaceAll(',', '.'));
     const peso = document.getElementById('peso').value;
     const resultado = document.getElementById('resultado')
+
+
 
 if (nome !== '' && altura !== '' && peso !== ''){
 const valorIMC = ( peso / (altura * altura)).toFixed(1);
