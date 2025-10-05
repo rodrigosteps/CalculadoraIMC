@@ -1,5 +1,6 @@
 const calcule = document.getElementById("calcule");
 
+//função para calcular imc
 function imc() {
     const nome = document.getElementById("nome").value;
     const alturaComVirgula = document.getElementById("altura").value;
@@ -8,12 +9,13 @@ function imc() {
     const peso = parseFloat(pesoComVirgula.replace(/,/g, ".")); 
     const resultado = document.getElementById("resultado");
 
+//validação numerica
     if (nome !== "" && !isNaN(altura) && !isNaN(peso)) {
 
         const valorIMC = (peso / (altura * altura)).toFixed(1);
 
         let classificacao = "";
-
+//loop if else
         if (valorIMC < 18.5) {
             classificacao =
                 "Abaixo do peso. Parabéns! Você é um ser de luz, quase etéreo. Agora, por favor, coma algo antes que o vento te leve.";
@@ -39,5 +41,5 @@ function imc() {
             "Preencha todos os campos corretamente (Nome, Altura e Peso).";
     }
 }
-
+//gatilho de click
 calcule.addEventListener("click", imc);
