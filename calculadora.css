@@ -4,10 +4,9 @@
   margin: 0;
   padding: 0;
   --bkgColor: #110B11;
-  --mainColor: #3685B5;
+  --mainColor: #0081AF;
   --borderRadius: 0.75em;
-  --fildsColor: #e8e8e8;
-  --textShadowWhite: 0px 4px #c8c8c8;
+  --fildsColor: #FFFBFA;
   font-family: cherry bomb one;
 }
 
