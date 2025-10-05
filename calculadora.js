@@ -5,10 +5,10 @@ function imc() {
 
     // --- CORREÇÃO APLICADA AQUI E NO PESO ---
     const alturaComVirgula = document.getElementById("altura").value;
-    const altura = parseFloat(alturaComVirgula.replaceAll(/,/g, ".")); // Altura convertida e corrigida
+    const altura = parseFloat(alturaComVirgula.replace(/,/g, ".")); // Altura convertida e corrigida
 
     const pesoComVirgula = document.getElementById("peso").value; // Pega o valor do peso
-    const peso = parseFloat(pesoComVirgula.replaceAll(/,/g, ".")); // Peso convertido e corrigido!
+    const peso = parseFloat(pesoComVirgula.replace(/,/g, ".")); // Peso convertido e corrigido!
     // ------------------------------------------
 
     const resultado = document.getElementById("resultado");
