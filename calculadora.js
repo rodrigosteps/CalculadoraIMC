@@ -43,3 +43,5 @@ function imc() {
 }
 //gatilho de click
 calcule.addEventListener("click", imc);
+
+
