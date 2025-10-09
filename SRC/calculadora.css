@@ -16,11 +16,10 @@ body {
 }
 /*main style*/
 .container {
-  margin: 4em auto;
+  margin: 4em auto 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: left;
   width: 40em;
   height: auto;
   border-radius: var(--borderRadius);
@@ -29,7 +28,8 @@ body {
 }
 .container img {
   width: 100%;
-  padding: 2.5em;
+  margin-top: 1em ;
+  padding: 1em ;
 }
 /* filds style*/
 
@@ -107,7 +107,7 @@ button {
     margin: 0 auto;
     font-size: 1.8em;
     font-weight: 700;
-    -webkit-text-stroke: #0e1d68dd 1px;
+    -webkit-text-stroke: #000000dd 1px;
     text-transform: capitalize;
   }
 }
