@@ -3,7 +3,10 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
-  --bkgColor: #110b11;
+}
+
+:root{
+    --bkgColor: #110b11;
   --mainColor: #0081af;
   --borderRadius: 0.75em;
   --fildsColor: #fffbfa;
