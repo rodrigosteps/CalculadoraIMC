@@ -132,61 +132,6 @@ button {
   width: 180px;
 }
 
-/*Mobile potrait style*/
-
-@media screen and (min-width: 330px) and (max-width: 430px) {
-
-  html{
-    height: 100dvh;
-  }
-  .container {
-    margin: 2em auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 90%;
-    background-color: #110b11;
-  }
-
-  .resultado {
-    width: 90%;
-  }
-
-   button{
-  width: 20em;
-  height: 4em;
-  margin: 1.8em auto 0em auto;
-  padding-bottom: 0em;
-  border-radius: var(--borderRadius);
-  border: solid 4px var(--mainColor);
-  color: var(--mainColor);
-  font-family: var(---fontstyle);
-
-    p{
-    margin: 0;
-    padding: 0;
-      font-size: 2.5em;
-  }
-  
-   }
-
-  .input {
-    font-size: 1.1em;
-    padding: 0;
-    margin: -0.2em 1em;
-
-    label {
-      font-size: 2.1rem;
-    }
-  }
-  
-  .footer {
-    display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 35% 1em 0em 1em;
-  }
-}
 
 /*Mobile landscape style*/
 
@@ -238,7 +183,66 @@ button {
     input{
       width: 50%;
     }
+
+    .footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+align-items: center;    }
   }
-
-
 }
+    /*Mobile potrait style*/
+    
+    @media screen and (min-width: 330px) and (max-width: 430px) {
+    
+      html{
+        height: 100dvh;
+      }
+      .container {
+        margin: 2em auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 90%;
+        background-color: #110b11;
+      }
+    
+      .resultado {
+        width: 90%;
+      }
+    
+       button{
+      width: 20em;
+      height: 4em;
+      margin: 1.8em auto 0em auto;
+      padding-bottom: 0em;
+      border-radius: var(--borderRadius);
+      border: solid 4px var(--mainColor);
+      color: var(--mainColor);
+      font-family: var(---fontstyle);
+    
+        p{
+        margin: 0;
+        padding: 0;
+          font-size: 2.5em;
+      }
+      
+       }
+    
+      .input {
+        font-size: 1.1em;
+        padding: 0;
+        margin: -0.2em 1em;
+    
+        label {
+          font-size: 2.1rem;
+        }
+      }
+      
+      .footer {
+         display: flex;
+      flex-direction: column;
+      justify-content: center;
+align-items: center;  
+      }
+    }
